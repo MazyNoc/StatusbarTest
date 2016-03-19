@@ -4,14 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="nu.annat.statusbartest.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/text"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Text under the statusbar!!"/>
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_below="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:text="this should be shown above the keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>
